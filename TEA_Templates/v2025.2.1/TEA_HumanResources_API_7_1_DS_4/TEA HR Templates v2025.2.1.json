@@ -1,6 +1,6 @@
 {
-    "title": "TEA HR Templates 2025.2.0",
-    "description": "TEA HR Templates 2025.2.0",
+    "title": "TEA HR Templates 2025.2.1",
+    "description": "TEA HR Templates 2025.2.1",
     "apiVersion": "7.1",
     "template": {
         "maps": [
@@ -23,6 +23,7 @@
                     "SEX",
                     "_EXTGENERATIONCODE",
                     "_EXTPKTEACHERREQUIREMENT",
+                    "_EXTADDITIONALDAYSPROGRAMTEACHER",
                     "_EXTCREDITABLEYEAROFSERVICE",
                     "_EXTSTAFFDONOTREPORTTSDS",
                     "_EXTSTAFFID",
@@ -41,9 +42,16 @@
                     "_EXTTYPESETS_BEGINDATE3",
                     "_EXTTYPESETS_STAFFTYPE3",
                     "_EXTTYPESETS_ENDDATE3",
-                    "_EXTCERTIFICATIONSET_BEGINDATE",
-                    "_EXTCERTIFICATIONSET_ENDDATE",
-                    "_EXTCERTIFICATIONSET_CERTIFICATION"
+                    "_EXTCERTIFICATIONSET_BEGINDATE1",
+                    "_EXTCERTIFICATIONSET_ENDDATE1",
+                    "_EXTCERTIFICATIONSET_CERTIFICATION1",
+                    "_EXTCERTIFICATIONSET_BEGINDATE2",
+                    "_EXTCERTIFICATIONSET_ENDDATE2",
+                    "_EXTCERTIFICATIONSET_CERTIFICATION2",                    
+                    "_EXTCERTIFICATIONSET_BEGINDATE3",
+                    "_EXTCERTIFICATIONSET_ENDDATE3",
+                    "_EXTCERTIFICATIONSET_CERTIFICATION3"
+                    
                 ],
                 "map": {
                     "staffUniqueId": {
@@ -189,18 +197,42 @@
                                         "Column": "_EXTTYPESETS_ENDDATE3"
                                     }
                                 }
-                            ],
-                            "paraprofessionalCertificationSet": {
+                            ],  
+                            "paraprofessionalCertificationSets": [
+                                {
                                 "beginDate": {
-                                    "Column": "_EXTCERTIFICATIONSET_BEGINDATE"
+                                    "Column": "_EXTCERTIFICATIONSET_BEGINDATE1"
                                 },
                                 "endDate": {
-                                    "Column": "_EXTCERTIFICATIONSET_ENDDATE"
+                                    "Column": "_EXTCERTIFICATIONSET_ENDDATE1"
                                 },
                                 "paraprofessionalCertification": {
-                                    "Column": "_EXTCERTIFICATIONSET_CERTIFICATION"
+                                    "Column": "_EXTCERTIFICATIONSET_CERTIFICATION1"
+                                }
+                            },
+                            {
+                                "beginDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_BEGINDATE2"
+                                },
+                                "endDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_ENDDATE2"
+                                },
+                                "paraprofessionalCertification": {
+                                    "Column": "_EXTCERTIFICATIONSET_CERTIFICATION2"
+                                }
+                            },
+                            {
+                                "beginDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_BEGINDATE3"
+                                },
+                                "endDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_ENDDATE3"
+                                },
+                                "paraprofessionalCertification": {
+                                    "Column": "_EXTCERTIFICATIONSET_CERTIFICATION3"
                                 }
                             }
+                        ]
                         }
                     }
                 },
@@ -219,21 +251,21 @@
                     "ENDDATE",
                     "SHAREDSERVICEARRANGEMENTSTAFF",
                     "STAFFSERVICE1",
-                    "SPEDSTUDENTAGERANGE1",
+                    "SPEDSTUDENTAGERANGUE1",
                     "POPULATIONSERVED1",
                     "MONTHLYMINUTES1",
                     "NUMBEROFSTUDENTSINCLASS1",
                     "STAFFSERVICEBEGINDATE1",
                     "STAFFSERVICEENDDATE1",
                     "STAFFSERVICE2",
-                    "SPEDSTUDENTAGERANGE2",
+                    "SPEDSTUDENTAGERANGUE2",
                     "POPULATIONSERVED2",
                     "MONTHLYMINUTES2",
                     "NUMBEROFSTUDENTSINCLASS2",
                     "STAFFSERVICEBEGINDATE2",
                     "STAFFSERVICEENDDATE2",
                     "STAFFSERVICE3",
-                    "SPEDSTUDENTAGERANGE3",
+                    "SPEDSTUDENTAGERANGUE3",
                     "POPULATIONSERVED3",
                     "MONTHLYMINUTES3",
                     "NUMBEROFSTUDENTSINCLASS3",
@@ -270,7 +302,7 @@
                             "staffServiceSets": [
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGE1",
+                                        "Column": "SPEDSTUDENTAGERANGUE1",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
@@ -296,7 +328,7 @@
                                 },
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGE2",
+                                        "Column": "SPEDSTUDENTAGERANGUE2",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
@@ -322,7 +354,7 @@
                                 },
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGE3",
+                                        "Column": "SPEDSTUDENTAGERANGUE3",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
@@ -361,8 +393,6 @@
                     "STAFF",
                     "EDUCATIONORGANIZATION",
                     "EMPLOYMENTSTATUS",
-                    "PERCENTDAYEMPLOYED",
-                    "NUMBERDAYSEMPLOYED",
                     "HIREDATE",
                     "ENDDATE",
                     "AUXILIARYROLEID1",
@@ -374,8 +404,18 @@
                     "AUXILIARYROLEID3",
                     "_EXTBEGINDATE3",
                     "_EXTENDDATE3",
-                    "_EXTEMPLOYEDSETBEGINDATE",
-                    "_EXTEMPLOYEDSETENDDATE"
+                    "_EXTEMPLOYEDSETBEGINDATE1",
+                    "_EXTEMPLOYEDSETENDDATE1",
+                    "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED1",
+                    "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED1",
+                    "_EXTEMPLOYEDSETBEGINDATE2",
+                    "_EXTEMPLOYEDSETENDDATE2",
+                    "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED2",
+                    "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED2",
+                    "_EXTEMPLOYEDSETBEGINDATE3",
+                    "_EXTEMPLOYEDSETENDDATE3",
+                    "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED3",
+                    "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED3"
                 ],
                 "map": {
                     "employmentStatusDescriptor": {
@@ -438,20 +478,48 @@
                                     }
                                 }
                             ],
-                            "daysEmployedSet": {
+                            "daysEmployedSets":[ {
                                 "beginDate": {
-                                    "Column": "_EXTEMPLOYEDSETBEGINDATE"
+                                    "Column": "_EXTEMPLOYEDSETBEGINDATE1"
                                 },
                                 "endDate": {
-                                    "Column": "_EXTEMPLOYEDSETENDDATE"
+                                    "Column": "_EXTEMPLOYEDSETENDDATE1"
                                 },
                                 "numberDaysEmployed": {
-                                    "Column": "NUMBERDAYSEMPLOYED"
+                                    "Column": "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED1"
                                 },
                                 "percentDayEmployed": {
-                                    "Column": "PERCENTDAYEMPLOYED"
+                                    "Column": "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED1"
                                 }
-                            }
+                            },{
+                                "beginDate": {
+                                    "Column": "_EXTEMPLOYEDSETBEGINDATE2"
+                                },
+                                "endDate": {
+                                    "Column": "_EXTEMPLOYEDSETENDDATE2"
+                                },
+                                "numberDaysEmployed": {
+                                    "Column": "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED2"
+                                },
+                                "percentDayEmployed": {
+                                    "Column": "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED2"
+                                }
+                            } ,
+                            {
+                                "beginDate": {
+                                    "Column": "_EXTEMPLOYEDSETBEGINDATE3"
+                                },
+                                "endDate": {
+                                    "Column": "_EXTEMPLOYEDSETENDDATE3"
+                                },
+                                "numberDaysEmployed": {
+                                    "Column": "_EXTEMPLOYEDSETNUMBERDAYSEMPLOYED3"
+                                },
+                                "percentDayEmployed": {
+                                    "Column": "_EXTEMPLOYEDSETPERCENTDAYEMPLOYED3"
+                                }
+                            } 
+                        ]
                         }
                     }
                 },
